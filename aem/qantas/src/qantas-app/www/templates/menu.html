@@ -6,6 +6,10 @@
             <ion-nav-buttons side="left">
                 <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
             </ion-nav-buttons>
+            <ion-nav-buttons side="right">
+                <button ng-hide='isLoggedIn' class="button button-icon button-clear ion-log-in" ng-click="showLogin()" menu-toggle="left"></button>
+                <button ng-show='isLoggedIn' class="button button-icon button-clear ion-log-out" ng-click="logout()" menu-toggle="left"></button>
+            </ion-nav-buttons>
         </ion-nav-bar>
         <ion-nav-view name="menuContent"></ion-nav-view>
     </ion-side-menu-content>
@@ -25,16 +29,6 @@
 
             <!-- Menu list -->
             <ion-list>
-
-                <ion-item ng-hide='isLoggedIn' class="item item-icon-right" menu-close ng-click="showLogin()">
-                    Login
-                    <i class="icon ion-log-in"></i>
-                </ion-item>
-
-                <ion-item ng-show='isLoggedIn' class="item item-icon-right" menu-close ng-click="logout()" ui-sref="app.welcome">
-                    Logout
-                    <i class="icon ion-log-in"></i>
-                </ion-item>
 
                 <ion-item class="item item-icon-right" menu-close href="#/app/profile">
                     Profile

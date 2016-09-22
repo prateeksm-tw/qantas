@@ -1,6 +1,29 @@
-<ion-view view-title="">
-	<ion-content>
+<ion-view view-title="" hide-nav-bar="true" class="home-page">
+    <div class="bar bar-subheader" style="height: 100px; background-color:#ff0000;">
+        <div class="col col-80">
+            <h2 class="page-name">Book your flight</h2>
+            
+        </div>
+    </div>
+    
+	<ion-content style="top:130px;">
+        
+        <ion-refresher pulling-text="Pull to refresh" on-refresh="updateApp('en')">
+        </ion-refresher>
+        
 		<div class="text-center page-top placeholder">
+            <div class="row">
+                <div class="col-50" style="height:150px; text-align:center; top: 50%; vertical-align: middle;">Book flight</div>
+                <div class="col-50">Book hotel</div>
+            </div>
+            <div class="row">
+                <div class="col-50" style="height:150px; text-align:center; top: 50%; vertical-align: middle;">Book car</div>
+                <div class="col-50">Book transfer</div>
+            </div>
+            <div class="row">
+                <div class="col-50" style="height:150px; text-align:center; top: 50%; vertical-align: middle;">Book activities</div>
+                <div class="col-50"></div>
+            </div>
 			<h3>This is a placeholder template and will be replaced by content authored in AEM.</h3>
 		</div>
  	</ion-content>

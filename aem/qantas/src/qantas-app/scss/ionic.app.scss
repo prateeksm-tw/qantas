@@ -18,6 +18,47 @@ $dark:                            #444 !default;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
+@font-face {
+  font-family: 'AdobeCl';
+  src: url('../fonts/AdobeClean-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AdobeCl';
+  src: url('../fonts/AdobeClean-It.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'AdobeCl';
+  src: url('../fonts/AdobeClean-Light.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AdobeCl';
+  src: url('../fonts/AdobeClean-LightIt.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'AdobeCl';
+  src: url('../fonts/AdobeClean-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AdobeCl';
+  src: url('../fonts/AdobeClean-BoldIt.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+$font-family-base: "AdobeCl", cursive !default;
+
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+@import "global";
+@import "home-page";
 

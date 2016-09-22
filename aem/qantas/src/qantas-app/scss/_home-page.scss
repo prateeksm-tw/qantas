@@ -1,0 +1,42 @@
+/* Home
+************************************/
+
+.home-page {
+  background: #192c38 url("../img/uni-campus-bkg.png") no-repeat top center;
+  background-size: 100% auto;
+
+  .item {
+    background: transparent;
+    border: none;
+    margin: 10px 10px 0;
+
+    color: #97b9bb;
+
+    &.item-icon-right {
+
+      .icon {
+
+        &:before {
+          font-size: 25px;
+        }
+        &:nth-child(2) {
+          right: 45px;
+        }
+      }
+    }
+  }
+
+  img.unic-logo {
+
+    width: 45%;
+    height: auto;
+
+    display: block;
+    margin: auto;
+    padding: 13% 0 20px;
+  }
+}
+
+.inner-page {
+  background: #192c38;
+}

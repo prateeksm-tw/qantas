@@ -69,8 +69,7 @@ div.text p {
 }
 
 .pane[view-title=Welcome] .scroll {
-  width: 100%;
-  height: 100%;
+    
 }
 
 .pane[view-title=Welcome] .text.section h1,
@@ -82,19 +81,19 @@ div.text p {
 }
 
 .pane[view-title=Welcome] .text.section {
-  padding: 0.5rem;
+    padding: 0.5rem;
 }
 
 .pane[view-title=Welcome] .text.section:first-child {
-  position: absolute;
-  width: 100%;
-  top: 2rem;
+    position: absolute;
+    width: 100%;
+    top: 2rem;
 }
 
 .pane[view-title=Welcome] .image.section{
-  width: 100%;
-  position: absolute;
-  top: 50%
+    width: 100%;
+    position: absolute;
+    top: 50%
 }
 
 .pane[view-title=Welcome] .loginLink {

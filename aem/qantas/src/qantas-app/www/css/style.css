@@ -48,8 +48,9 @@ div.page-center {
 
 /* Placeholder Template Styles */
 .placeholder {
-    margin-top: 50%;
-    margin-bottom: 50%;
+    /*margin-top: 50%;
+    margin-bottom: 50%;*/
+    margin-top: 10%;
 }
 .placeholder h3 {
     color: #999999;
