@@ -1,0 +1,12 @@
+  [
+    {
+      "title":"Placeholder",
+      "address":"Placeholder Address",
+      "imgUrl1" :"content/mobileapps/qantas/en/welcome/locations/placeholder/cityplaceholder1.jpg",
+      "imgUrl2" :"content/mobileapps/qantas/en/welcome/locations/placeholder/cityplaceholder2.jpg",
+      "imgUrl3" :"content/mobileapps/qantas/en/welcome/locations/placeholder/cityplaceholder3.jpg",
+      "latitude":45.40230,
+      "longitude":-75.70941,
+      "detailsUrl":"placeholder"
+    }
+  ]

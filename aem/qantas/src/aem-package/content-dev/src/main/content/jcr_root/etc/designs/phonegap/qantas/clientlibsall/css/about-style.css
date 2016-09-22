@@ -1,0 +1,17 @@
+.about .scroll {
+    width: 100%;
+    height: 100%;
+    display: table;
+    padding-top: 1.5rem;
+}
+
+.about .section {
+    display: table-row;
+}
+
+.about .text p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.1rem;
+    margin-right:0.1rem;
+}

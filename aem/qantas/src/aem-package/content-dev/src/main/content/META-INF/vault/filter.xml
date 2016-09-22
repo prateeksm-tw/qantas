@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/content/mobileapps/qantas" mode="merge">
+        <exclude pattern="/content/mobileapps/qantas(/.*)?"/>
+        <include pattern="/content/mobileapps/qantas/jcr:content"/>
+        <include pattern="/content/mobileapps/qantas/shell(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/mobileapps/qantas/icon">
+        <exclude pattern="/content/dam/mobileapps/qantas/icon(/.*/)+cq5dam(.*)+"/>
+    </filter>
+    <filter root="/apps/qantas"/>
+    <filter root="/apps/cq"/>
+    <filter root="/etc/designs/phonegap/qantas"/>
+    <filter root="/etc/clientlibs/adobe/ionic-1.1.0"/>
+    <filter root="/home" mode="merge">
+        <exclude pattern="/home(/.*)?"/>
+        <include pattern="/home/rep:policy"/>
+    </filter>
+    <filter root="/home/users/system/ionic-app-profile-service"/>
+</workspaceFilter>
