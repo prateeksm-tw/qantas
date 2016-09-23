@@ -2,6 +2,8 @@ angular.module('hybridapp.controllers', [])
 
     .controller('AppCtrl', ['$scope', '$rootScope', '$ionicModal', '$timeout', 'appManifest', 'appState', '$rootElement', 'TargetService',
         function ($scope, $rootScope, $ionicModal, $timeout, appManifest, appState, $rootElement, TargetService) {
+            
+            console.log("AppCtrl");
 
             // Form data for the login modal
             $scope.loginData = {};

@@ -1,0 +1,99 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content ng-controller="AppCtrl">
+        <ion-nav-bar class="bar-assertive">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+            
+            <ion-nav-buttons side="right">
+                <!-- Toggle right side menu -->
+                <!-- button menu-toggle="right" ng-hide='isLoggedIn' ng-click="loginFB()" ng-class="{'button button-icon icon ion-log-out':loggedIn,'button button-icon icon ion-log-in':!loggedIn}"></button -->
+                
+                <button menu-toggle="right" ng-hide='isLoggedIn' ng-click="showLogin()" class="button button-icon icon ion-log-in"></button>
+                <button menu-toggle="right" ng-show='isLoggedIn' ng-click="logout()" class="button button-icon icon ion-log-out"></button>
+                
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        
+        <ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+            <!-- Home Tab -->
+            <ion-tab title="Home" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/home">
+                <ion-nav-view name="tab-home"></ion-nav-view>
+            </ion-tab>
+
+            <!-- Trips Tab -->
+            <ion-tab title="Trips" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/scan">
+                <ion-nav-view name="tab-trips"></ion-nav-view>
+            </ion-tab>
+
+            <!-- Book Tab -->
+            <ion-tab title="Book" icon-off="ion-plane" icon-on="ion-plane" href="#/tab/books">
+                <ion-nav-view name="tab-book"></ion-nav-view>
+            </ion-tab>
+
+            <!-- Offers Tab -->
+            <ion-tab title="Offers" icon-off="ion-ios-pricetags" icon-on="ion-ios-pricetags" href="#/tab/account">
+                <ion-nav-view name="tab-offers"></ion-nav-view>
+            </ion-tab>
+
+            <!-- More Tab -->
+            <ion-tab title="More" icon-off="ion-more" icon-on="ion-more" href="#/tab/account">
+                <ion-nav-view name="tab-more"></ion-nav-view>
+            </ion-tab>
+
+        </ion-tabs>
+
+    </ion-side-menu-content>
+    
+    <ion-side-menu side="left" ng-controller="MenuCtrl" ng-hide="hideLeft" ng-style="menuStyle">
+
+        <!-- Header bar in menu.               -->
+        <!-- show user avatar if authenticated -->
+        <ion-header-bar class="bar-stable">
+            <a class="center" menu-close href="#/app/welcome">
+                <img ng-hide='profileImage' class="avatar" src="img/profile.png" />
+                <img ng-show='profileImage' class="avatar" src="{{profileImage}}" />
+            </a>
+        </ion-header-bar>
+
+        <ion-content>
+
+            <!-- Menu list -->
+            <ion-list>
+
+                <ion-item class="item item-icon-right" menu-close href="#/app/profile">
+                    Profile
+                    <i class="icon ion-person"></i>
+                </ion-item>
+
+                <ion-item class="item item-icon-right" menu-close href="#/app/news">
+                    News and Events
+                    <i class="icon ion-earth"></i>
+                </ion-item>
+
+                <ion-item class="item item-icon-right" menu-close href="#/app/location">
+                    Location
+                    <i class="icon ion-location"></i>
+                </ion-item>
+
+                <ion-item class="item item-icon-right" menu-close href="#/app/about">
+                    About Us
+                    <i class="icon ion-information-circled"></i>
+                </ion-item>
+
+                <ion-item class="item item-icon-right" menu-close ng-click="updateApp('en')">
+                    Update
+                    <i class="icon ion-ios-cloud-download"></i>
+                </ion-item>
+
+            </ion-list>
+        </ion-content>
+
+    </ion-side-menu>
+    
+</ion-side-menus>

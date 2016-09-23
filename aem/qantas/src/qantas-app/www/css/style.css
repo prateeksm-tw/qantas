@@ -1,6 +1,98 @@
 /* Empty. Add your own CSS if you like */
 @charset "UTF-8";
 
+@import url(../lib/fonts/font-awesome/font-awesome.min.css);
+
+/* Proxima Nova Light */
+
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('font/291367_4_0.eot');
+    src: url('font/291367_4_0.eot?#iefix') format('embedded-opentype'), url('font/291367_4_0.woff') format('woff'), url('font/291367_4_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Proxima Nova Regular */
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('font/28B55D_4_0.eot');
+    src: url('font/28B55D_4_0.eot?#iefix') format('embedded-opentype'), url('font/28B55D_4_0.woff') format('woff'), url('font/28B55D_4_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Proxima Nova Semibold */
+
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url('font/291367_5_0.eot');
+    src: url('font/291367_5_0.eot?#iefix') format('embedded-opentype'), url('font/291367_5_0.woff') format('woff'), url('font/291367_5_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Proxima Nova Bold */
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('font/28B55D_5_0.eot');
+    src: url('font/28B55D_5_0.eot?#iefix') format('embedded-opentype'), url('font/28B55D_5_0.woff') format('woff'), url('font/28B55D_5_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Proxima Nova Condensed Regular */
+
+@font-face {
+    font-family: 'ProximaNovaCond-Regular';
+    src: url('font/28DE92_4_0.eot');
+    src: url('font/28DE92_4_0.eot?#iefix') format('embedded-opentype'), url('font/28DE92_4_0.woff') format('woff'), url('font/28DE92_4_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Proxima Nova Condensed Bold */
+
+@font-face {
+    font-family: 'ProximaNovaCond-Bold';
+    src: url('font/28DE92_5_0.eot');
+    src: url('font/28DE92_5_0.eot?#iefix') format('embedded-opentype'), url('font/28DE92_5_0.woff') format('woff'), url('font/28DE92_5_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* BRAUER NEUE FONTS */
+
+
+/* Brauer Neue Regular */
+
+@font-face {
+    font-family: 'BrauerNeueRegular';
+    src: url('fonts/lineto-brauer-neue-regular.eot');
+    src: url('fonts/lineto-brauer-neue-regular.eot?#iefix') format('embedded-opentype'), url('fonts/lineto-brauer-neue-regular.woff') format('woff'), url('fonts/lineto-brauer-neue-regular.ttf') format('truetype'), url('fonts/lineto-brauer-neue-regular.svg#BrauerNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Brauer Neue Bold */
+
+@font-face {
+    font-family: 'BrauerNeueBold';
+    src: url('fonts/lineto-brauer-neue-bold.eot');
+    src: url('fonts/lineto-brauer-neue-bold.eot?#iefix') format('embedded-opentype'), url('fonts/lineto-brauer-neue-bold.woff') format('woff'), url('fonts/lineto-brauer-neue-bold.ttf') format('truetype'), url('fonts/lineto-brauer-neue-bold.svg#BrauerNeueBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Simple fluid media
    Note: Fluid media requires that you remove the media's height and width attributes from the HTML
    http://www.alistapart.com/articles/fluid-images/ 
@@ -21,6 +113,7 @@ div.page-center {
     left: 50%;
     width: 100px;
     height: 100px;
+    font-family: "ProximaNova-Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-top: 200px; /* Half the height */
     margin-left: -50px; /* Half the width */
 }

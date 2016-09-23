@@ -1,5 +1,5 @@
-<ion-view view-title="" hide-nav-bar="true" class="home-page">
-    <div class="bar bar-subheader" style="height: 100px; background-color:#ff0000;">
+<ion-view view-title="" hide-nav-bar="false" class="home-page">
+    <div class="bar bar-subheader bar-assertive" style="height: 100px;">
         <div class="col col-80">
             <h2 class="page-name">Book your flight</h2>
             
@@ -10,6 +10,51 @@
         
         <ion-refresher pulling-text="Pull to refresh" on-refresh="updateApp('en')">
         </ion-refresher>
+        
+        <ion-list>
+            <div class="item item-input-inset" ng-form="settingsQFFNo">
+                <label class="item-input-wrapper">
+                    <input type="number" ng-model="settings.QFFNo" placeholder="Please enter your Qantas Frequent Flyer number">
+                </label>
+                <button id="saveFirebaseURL" ng-click="saveQFFNo(settings)" ng-disabled="settingsQFFNo.$invalid" class="button button-small">
+                    Submit
+                </button>
+            </div>
+        </ion-list>
+        
+        <h1>Your profile</h1>
+        
+        <div class="list">
+
+            <a class="item item-avatar" href="#">
+                <img src="../../../../img/qantas-points-icon.png">
+                <h2>Qantas Points</h2>
+                <p>179,225</p>
+            </a>
+
+            <a class="item item-avatar" href="#">
+                <img src="venkman.jpg">
+                <h2>Qantas Points</h2>
+                <p>179,225</p>
+            </a>
+
+        </div>
+        
+        <h1>Your next trip</h1>
+        
+        <div class="list">
+
+            <a class="item item-avatar" href="#">
+                <img src="../../../../img/qantas-points-icon.png">
+                <h2>ADD TRIP</h2>
+            </a>
+
+            <a class="item item-avatar" href="#">
+                <img src="venkman.jpg">
+                <h2>BOOK FLIGHT</h2>
+            </a>
+
+        </div>
         
 		<div class="text-center page-top placeholder">
             <div class="row">
